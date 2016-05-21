@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,800,700);
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(https://fonts.googleapis.com/css?family=Sanchez);
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+@import url(StrawberriesAndFrills.css);
 * {
   margin: 0;
   padding: 0;
@@ -36,11 +39,12 @@ body {
   content: url(/static/banner.jpg); }
 
 .cool_buttons a {
+  font-family: "Open Sans";
   display: block;
   text-decoration: none;
   font-size: 20;
   font-weight: 400;
-  color: #ADFAFF;
+  color: #3ACCD6;
   transition: .25s; }
 
 .cool_buttons a:hover {
@@ -79,8 +83,8 @@ body {
 
 #topbar li:hover {
   padding-left: 0px;
-  border-left: 1px solid #ADFAFF;
-  border-right: 1px solid #ADFAFF;
+  border-left: 1px solid #3ACCD6;
+  border-right: 1px solid #3ACCD6;
   -webkit-animation: flashing_menu 0.125s infinite;
   /* Chrome, Safari, Opera */
   animation: flashing_menu 0.125s infinite; }
@@ -109,18 +113,20 @@ body {
 #sidebar li:hover {
   padding-left: 0px;
   text-align: left;
-  border-top: 0.25px solid #ADFAFF;
-  border-bottom: 0.25px solid #ADFAFF;
+  border-top: 0.25px solid #3ACCD6;
+  border-bottom: 0.25px solid #3ACCD6;
   -webkit-animation: flashing_menu 0.125s infinite;
   /* Chrome, Safari, Opera */
   animation: flashing_menu 0.125s infinite; }
 
 #content {
+  font-family: "Open Sans";
+  text-align: justify;
   overflow: auto;
-  width: 715px;
+  width: 700px;
   border: none;
   float: left;
-  padding-left: 15px;
+  padding: 15px;
   height: auto;
   background: #FFDEF8; }
 

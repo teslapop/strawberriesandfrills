@@ -1,7 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,800,700);
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(https://fonts.googleapis.com/css?family=Sanchez);
+@import url(https://fonts.googleapis.com/css?family=Chewy);
 @charset "utf-8";
 
+@import url(StrawberriesAndFrills.css);
+
+
+
+$link_font: 'Open Sans';
+$content_font_family: 'Open Sans';
 
 
 $width_of_site_area:      860px;
@@ -10,7 +18,7 @@ $selected_flash_color:    #222;
 $selected_flashing_speed: .125s;
 $content_background:      #FFDEF8;
 $active_button_color:     hotpink;
-$menu_button_color:       #ADFAFF;
+$menu_button_color:       #3ACCD6;
 $footer_color:            black;
 
 *{
@@ -73,6 +81,7 @@ body{
 
 
 .cool_buttons a{
+	font-family: $link_font;
 	display: block;
 	text-decoration: none;
 	font-size: 20;
@@ -188,11 +197,13 @@ body{
 
 
 #content{
+	font-family: $content_font_family;
+	text-align: justify;
 	overflow: auto;
-	width:715px;
+	width:700px;
 	border: none;
 	float:left;
-	padding-left: 15px;
+	padding: 15px;
 	height:auto;
 	background: $content_background;
 

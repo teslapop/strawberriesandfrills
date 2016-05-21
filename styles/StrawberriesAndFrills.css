@@ -1,0 +1,63 @@
+
+
+
+
+
+h1{
+	font-family: 'Open Sans';
+	color:pink;
+	-webkit-text-stroke: 1.5px #FF00A6;	
+
+
+}
+
+h2, h3, h4, h5, h6{
+
+	color:#FF00A6;
+
+}
+
+
+
+strong{
+	font-family: 'Open Sans';
+	text-decoration: bold;
+	font-size: 25;
+	font-weight: 800;
+	color:white;
+	-webkit-text-stroke: 2px #FF00A6;
+
+
+/*#76D7DE*/
+}
+
+
+
+
+a{
+
+	font-weight:800;
+
+
+}
+/* unvisited link */
+a:link {
+    color: #0AACCC;
+}
+
+/* visited link */
+a:visited {
+    color: purple;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+
