@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,800,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+* {
+  margin: 0;
+  padding: 0;
+  border: white; }
+
+#bgimg {
+  display: block;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  background: url(/static/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+body {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  height: 100%;
+  width: 100%; }
+
+#site_container {
+  border-radius: 20px;
+  /*500px*/
+  overflow: auto;
+  margin: 0 auto;
+  width: 860px;
+  height: auto;
+  display: block;
+  background: #000; }
+
+#banner {
+  content: url(/static/banner.jpg); }
+
+.cool_buttons a {
+  display: block;
+  text-decoration: none;
+  font-size: 20;
+  font-weight: 400;
+  color: hotpink;
+  transition: .25s; }
+
+.cool_buttons a:hover {
+  font-family: 'Noto Sans Japanese';
+  font-size: 0;
+  color: white;
+  -webkit-text-stroke: 0.8px hotpink;
+  text-shadow: 0px 0px 5px hotpink; }
+
+.cool_button:hover:after {
+  content: attr(data-btn-alt);
+  font-size: 16px;
+  font-weight: 800;
+  word-wrap: break-word; }
+
+#topbar {
+  height: 30px;
+  width: 860px;
+  display: block;
+  background: #000; }
+
+#topbar ul {
+  text-align: center;
+  list-style-type: none; }
+
+#topbar li {
+  display: inline-block;
+  vertical-align: text-top;
+  width: 150px;
+  height: 30px;
+  padding-left: 0px;
+  margin: 0 0 5px 0;
+  transition: .8s; }
+
+#topbar li:hover {
+  padding-left: 0px;
+  border-left: 1px solid pink;
+  border-right: 1px solid pink;
+  background: #333; }
+
+#sidebar {
+  margin: 0 auto;
+  width: 100px;
+  height: 100%;
+  float: left;
+  padding: 15px;
+  background: #000; }
+
+#sidebar ul {
+  list-style-type: none; }
+
+#sidebar li {
+  display: block;
+  vertical-align: text-top;
+  width: 100px;
+  height: 35px;
+  overflow: hidden;
+  padding-left: 0px;
+  margin: 0 0 0px 0;
+  transition: .8s; }
+
+#sidebar li:hover {
+  padding-left: 0px;
+  background: #333;
+  border-top: 1px solid pink;
+  border-bottom: 1px solid pink; }
+
+#content {
+  overflow: auto;
+  width: 715px;
+  border: none;
+  float: left;
+  padding-left: 15px;
+  height: auto;
+  background: pink; }
+
+#floater_container {
+  margin: 0 auto;
+  display: block;
+  height: auto;
+  width: 1300;
+  overflow: auto;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.floater {
+  display: block;
+  border: red 1px solid;
+  float: right;
+  color: white;
+  width: 10px;
+  height: 10px;
+  background: pink; }
+
+#footer {
+  background: purple;
+  color: white;
+  width: 860px;
+  float: left;
+  clear: both;
+  width: 860px;
+  height: 100px; }
+
+#footer p {
+  display: block;
+  width: auto;
+  padding: 15px;
+  font-size: 15px;
+  color: white;
+  text-align: center; }
+
+/*# sourceMappingURL=global.css.map */

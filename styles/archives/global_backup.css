@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,800,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@charset "utf-8";
+
+
+:root{
+	--width_of_site_area:860px;
+	--sidebar_color:#000;
+
+}
+
+
+
+*{
+	margin:0;
+	padding:0;
+	border:white;
+}
+
+
+#bgimg {
+	display: block;
+	overflow: auto; 
+	height:100%;
+	width: 100%;
+	background: url(/static/bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+
+body{
+	font-family: 'Open Sans';
+	font-size: 16px;
+	height: 100%;
+	width: 100%
+
+
+}
+
+
+
+
+#site_container{
+	border-radius: 500px;
+	overflow:auto;
+	margin:0 auto;
+	width: var(--width_of_site_area);
+	height: auto;
+	display: block;
+	background: var(--sidebar_color);
+
+
+
+}
+
+#banner{
+
+   content:url(/static/banner.jpg);
+
+}
+
+#topbar{
+	height:30px;
+	width: var(--width_of_site_area);
+	display: block;
+	background:purple;
+
+
+
+}
+
+#sidebar{
+	margin: 0 auto;
+	width: 100px;
+	height:100%;
+	float:left;
+	padding:15px;
+	background:var(--sidebar_color);
+
+	
+
+}
+
+#sidebar a{
+	display: block;
+	text-decoration: none;
+	font-size: 20;
+	font-weight: 400;
+	color: hotpink;
+	transition:.25s;
+
+
+}
+
+
+
+#sidebar a:hover{
+	font-family: 'Noto Sans Japanese';
+	font-size: 0;
+	color: white;
+	-webkit-text-stroke:.8px hotpink;
+    text-shadow: 0px 0px 5px hotpink;
+}
+
+#sidebarbutton:hover:after {
+	content: attr(data-btn-alt);
+    font-size: 16px;
+    font-weight: 800;
+    word-wrap: break-word;
+}
+
+
+#sidebar ul{
+	list-style-type: none;
+
+
+}
+
+#sidebar li{
+	padding-left: 0px;
+	border-bottom: 1px solid pink;
+	margin: 0 0 5px 0;
+
+	transition: .8s;
+
+
+}
+#sidebar li:hover{
+	padding-left: 0px;
+
+}
+
+
+#content{
+	overflow: auto;
+	width:715px;
+	border: none;
+	float:left;
+	padding-left: 15px;
+	height:auto;
+	background: pink;
+
+
+}
+
+
+#floater_container{
+	margin:0 auto;
+	display:block;
+	height:auto;
+	width:1300;
+	overflow: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+
+
+
+}
+
+
+
+.floater{
+
+	display: block;
+	border: red 1px solid;
+	float: right;
+	color:white;
+	width:10px;
+	height: 10px
+	background: pink;
+
+
+
+}
+
+
+
+
+
+#footer{
+	background: purple;
+	color:white;
+	width:var(--width_of_site_area);
+	float:left;
+	clear:both;
+	width: var(--width_of_site_area);
+	height:100px;
+
+
+
+
+}
