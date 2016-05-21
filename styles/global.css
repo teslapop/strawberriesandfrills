@@ -30,7 +30,7 @@ body {
   width: 860px;
   height: auto;
   display: block;
-  background: #000; }
+  background: black; }
 
 #banner {
   content: url(/static/banner.jpg); }
@@ -40,15 +40,17 @@ body {
   text-decoration: none;
   font-size: 20;
   font-weight: 400;
-  color: hotpink;
+  color: #ADFAFF;
   transition: .25s; }
 
 .cool_buttons a:hover {
   font-family: 'Noto Sans Japanese';
   font-size: 0;
   color: white;
-  -webkit-text-stroke: 0.8px hotpink;
-  text-shadow: 0px 0px 5px hotpink; }
+  -webkit-animation: color_switch 0.25s infinite;
+  /* Chrome, Safari, Opera */
+  animation: color_switch 0.25s infinite;
+  /* Chrome, Safari, Opera */ }
 
 .cool_button:hover:after {
   content: attr(data-btn-alt);
@@ -60,7 +62,7 @@ body {
   height: 30px;
   width: 860px;
   display: block;
-  background: #000; }
+  background: black; }
 
 #topbar ul {
   text-align: center;
@@ -77,9 +79,11 @@ body {
 
 #topbar li:hover {
   padding-left: 0px;
-  border-left: 1px solid pink;
-  border-right: 1px solid pink;
-  background: #333; }
+  border-left: 1px solid #ADFAFF;
+  border-right: 1px solid #ADFAFF;
+  -webkit-animation: flashing_menu 0.125s infinite;
+  /* Chrome, Safari, Opera */
+  animation: flashing_menu 0.125s infinite; }
 
 #sidebar {
   margin: 0 auto;
@@ -87,7 +91,7 @@ body {
   height: 100%;
   float: left;
   padding: 15px;
-  background: #000; }
+  background: black; }
 
 #sidebar ul {
   list-style-type: none; }
@@ -96,17 +100,20 @@ body {
   display: block;
   vertical-align: text-top;
   width: 100px;
-  height: 35px;
+  height: 30px;
   overflow: hidden;
   padding-left: 0px;
-  margin: 0 0 0px 0;
+  margin: 0 0 10px 0;
   transition: .8s; }
 
 #sidebar li:hover {
   padding-left: 0px;
-  background: #333;
-  border-top: 1px solid pink;
-  border-bottom: 1px solid pink; }
+  text-align: left;
+  border-top: 0.25px solid #ADFAFF;
+  border-bottom: 0.25px solid #ADFAFF;
+  -webkit-animation: flashing_menu 0.125s infinite;
+  /* Chrome, Safari, Opera */
+  animation: flashing_menu 0.125s infinite; }
 
 #content {
   overflow: auto;
@@ -115,7 +122,7 @@ body {
   float: left;
   padding-left: 15px;
   height: auto;
-  background: pink; }
+  background: #FFDEF8; }
 
 #floater_container {
   margin: 0 auto;
@@ -132,17 +139,17 @@ body {
   float: right;
   color: white;
   width: 10px;
-  height: 10px;
+  height: 5px;
   background: pink; }
 
 #footer {
-  background: purple;
+  background: black;
   color: white;
   width: 860px;
   float: left;
   clear: both;
   width: 860px;
-  height: 100px; }
+  height: 50px; }
 
 #footer p {
   display: block;
@@ -151,5 +158,30 @@ body {
   font-size: 15px;
   color: white;
   text-align: center; }
+
+@-webkit-keyframes flashing_menu {
+  from {
+    background: black; }
+  to {
+    background: #222; } }
+@keyframes flashing_menu {
+  from {
+    background: black; }
+  to {
+    background: #222; } }
+@-webkit-keyframes color_switch {
+  from {
+    -webkit-text-stroke: 0.8px hotpink;
+    text-shadow: 0px 0px 5px hotpink; }
+  to {
+    -webkit-text-stroke: .8px purple;
+    text-shadow: 0px 0px 5px purple; } }
+@keyframes color_switch {
+  from {
+    -webkit-text-stroke: 0.8px hotpink;
+    text-shadow: 0px 0px 5px hotpink; }
+  to {
+    -webkit-text-stroke: .15px purple;
+    text-shadow: 0px 0px 5px purple; } }
 
 /*# sourceMappingURL=global.css.map */
