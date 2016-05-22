@@ -12,33 +12,42 @@
 
 
 	<script>
-	var a = "<div id='temp' class='floater floater_first'>this is a test floater</div>";
+	function displaysite(){
+
+		document.getElementById('site_container').style.opacity = '1';
+
+	}
+
+
+	var a = "<div id='floater1' class='floater floater_first'>this is the first module</div>";
+	var modules_allowed = 7;
+	//this can be  created with an array or possile modules, this can then check for the one beign requester
 	var counter = 0;
 	function myFunction() {	
-		if(counter > 0){
-			document.getElementById('temp').remove();
-			a = a + "<div id='temp' class='floater'>this is a test floater</div> <div id='demo'></div>";
+		if(counter < modules_allowed){
+			if(counter > 0){
+				a = a + "<div id='floater" + (counter+1) + "' class='floater'>this is module number " + (counter+1) + " </div> <div id='demo'></div>";
 
 
+			}
+
+			document.getElementById("modules").innerHTML = a;
+			counter++;
 		}
-
-		document.getElementById("demo").innerHTML = a;
-		counter++;
-
 
 	}
 	</script>
 
 
 </head>
-<body>
+<body onload ='displaysite()'>
 	<div id='bgimg'>
 
 
 		<div id='floater_container'>
 
 
-			<div id='site_container'>
+			<div id='site_container' style='opacity:0;'>
 
 
 				<div id='banner'></div>
@@ -49,7 +58,7 @@
 						<li><a class= 'cool_button' data-btn-alt='ブログ' href='#'>Blog</a></li>
 						<li><a class= 'cool_button' data-btn-alt='ショッピング' href='#'>Store</a></li>
 						<li><a class= 'cool_button' data-btn-alt='約' href='#'>About</a></li>
-						<li><a class= 'cool_button' data-btn-alt='接触' href='#'>Contact</a></li>
+						<li><a class= 'cool_button' data-btn-alt='モジュール' href='#' onclick="myFunction()">Module</a></li>
 
 					</ul>
 
@@ -71,7 +80,7 @@
 					<h1>On The Electro-Dynamics of Lolita Fashion</h1><br>
 
 
-					<button onclick="myFunction()">Click me</button>
+
 
 
 
@@ -123,7 +132,7 @@
 
 
 
-			<div id="demo"></div>
+			<div id="modules"></div>
 
 		<!--<div class='floater floater_first'>this is a test floater</div>
 

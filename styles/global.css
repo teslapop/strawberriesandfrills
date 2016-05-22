@@ -24,6 +24,7 @@ body {
   width: 100%; }
 
 #site_container {
+  opacity: 0;
   border-top-left-radius: 500px;
   border-top-right-radius: 500px;
   /*500px*/
@@ -75,6 +76,7 @@ body {
 #topbar li {
   display: inline-block;
   vertical-align: text-top;
+  overflow: hidden;
   width: 150px;
   height: 30px;
   padding-left: 0px;
