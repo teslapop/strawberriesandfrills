@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,800,700);
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-@import url(https://fonts.googleapis.com/css?family=Sanchez);
-@import url(https://fonts.googleapis.com/css?family=Chewy);
 @charset "utf-8";
 
 @import url(StrawberriesAndFrills.css);
@@ -13,18 +11,24 @@ $content_font_family: 'Open Sans';
 
 
 $width_of_site_area:      860px;
-$sidebar_color:           black;
-$selected_flash_color:    #222;
+$sidebar_color:           #8e44ad;
+$selected_flash_color:    #C192D4; //E1C2ED;
 $selected_flashing_speed: .125s;
-$content_background:      #FFDEF8;
+$content_background:      #ecf0f1;
 $active_button_color:     hotpink;
-$menu_button_color:       #3ACCD6;
+$menu_button_color:       #ecf0f1;
 $footer_color:            black;
+$banner_height:           400px;
+$top_menu_bar_height:     30px;
+$floater_width:           150px;
+$shadow_dept:             8px;
+
+
 
 *{
 	margin:0;
 	padding:0;
-	border:white;
+	border:white solid 0px;
 }
 
 
@@ -60,14 +64,15 @@ body{
 
 
 #site_container{
-	border-radius: 20px; /*500px*/
+	border-top-left-radius:  500px;
+	border-top-right-radius: 500px; /*500px*/
 	overflow:auto;
-	margin:0 auto;
+	float:left;
 	width: $width_of_site_area;
 	height: auto;
 	display: block;
 	background: $sidebar_color;
-
+    box-shadow: $shadow_dept $shadow_dept 0px 0px rgba(0,0,0,0.2); 
 
 
 }
@@ -111,7 +116,7 @@ body{
 }
 
 #topbar{
-	height:30px;
+	height:$top_menu_bar_height;
 	width: $width_of_site_area;
 	display: block;
 	background: $sidebar_color;
@@ -136,7 +141,7 @@ body{
 	height: 30px;
 	padding-left: 0px;
 	margin: 0 0 5px 0;
-	transition: .8s;
+	transition: $selected_flashing_speed*.5;
 
 
 
@@ -179,7 +184,7 @@ body{
 	overflow: hidden;
 	padding-left: 0px;
 	margin: 0 0 10px 0;
-	transition: .8s;
+	transition: $selected_flashing_speed*.5;
 
 
 }
@@ -212,13 +217,16 @@ body{
 
 
 #floater_container{
+	overflow: auto;
 	margin:0 auto;
+	padding-left: $floater_width;
 	display:block;
 	height:auto;
-	width:1300;
+	width:(930px + $floater_width);
 	overflow: auto;
-	padding-top: 50px;
+	padding-top: 25px;
 	padding-bottom: 50px;
+
 
 
 
@@ -230,17 +238,28 @@ body{
 .floater{
 
 	display: block;
-	border: red 1px solid;
-	float: right;
+	border: white 3px solid;
+	margin-top: 20px;
+	margin-left: 10px;
+	border-radius: 20px;
+	float: left;
 	color:white;
-	width:10px;
-	height: 5px;
-	background: pink;
+	width:$floater_width;
+	height:150px;
+	padding:15px;
+	background: #FF54EB;
+    box-shadow: $shadow_dept $shadow_dept 0px 0px rgba(0,0,0,0.2); 
 
 
 
 }
 
+.floater_first{
+
+
+	margin-top: ($banner_height + $top_menu_bar_height);
+
+}
 
 
 
@@ -256,18 +275,15 @@ body{
 
 
 
+	p{
+		display: block;
+		width:auto;
+		padding:15px;
+		font-size: 15px;
+		color:white;
+		text-align: center;
 
-}
-
-#footer p{
-	display: block;
-	width:auto;
-	padding:15px;
-	font-size: 15px;
-	color:white;
-	text-align: center;
-
-
+	}
 
 }
 
